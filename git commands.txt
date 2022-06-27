@@ -1,0 +1,71 @@
+1-git init                             		 // create new git local repository
+2-git add <filename>                	 // to add file to stage area
+git add .                          		 //to add all file in the folder to stage
+git commit -m “message”  		 // to  commit message
+git commit -am “message”  		 // to add+ commit message file should be modify not  in untracked area
+git commit —amend                                      // modify commit message
+git status                       			 // to see what’s inside you stage area
+git command - -help                                 //documentation help for git 
+git mv old name.txt   new name.txt                 //rename file and added
+git reset                                                          //remove all file from stage area
+git reset -- hard                                               //remove all action  after last commit
+
+git branch                                                   //display all branches
+git branch <branch name>                        // create new branch
+git checkout <branch name>                    // move to branch
+git branch -d <branch name>                   //delete branch 
+git checkout -b <branch name>                //  = git branch <branch name>   + git checkout <branch name> 
+git branch  main  
+git merge  <branch name>                       //merge two branches
+git stash push                                          //remove file  to stash
+git stash pop						   //restore fill from stash 
+git stash -a 								//return all stashed file
+git stash list							//return all stashed file
+git revert <commit>					//
+ 
+
+git remote add origin +url  	                    	// to create remote repository
+git push  origin (master/main)                       //push from local to remote
+git pull origin (master/main)                         //pull from remote to local
+git push -u origin main                                //
+git remote -v	                                        // remote repository details
+git clone url                                                 // make copy of code 
+
+
+
+
+
+
+
+
+git restore <filename>                                  //to discard changes in working directory 
+git restore - -staged<filename>                     // remove file from stage area
+git checkout <hash commit >    			      // to go back to last version you commit tedgit add 
+git config (user.name/user.email/list)    
+git config - -global   (user.name/user.email)    
+git rm <filename>                                         //delete file
+git rm - -cached <file>                                   //remove file from stage area to untraced area
+git rm -f <filename>                                      //to force removal from stage area and delete it from git file
+git checkout 
+git log                            			              //to show details about file added
+git log - -oneline                        		 	        //to show details about file added in one line
+git log -p                        			       // If you also want to see complete diffs at each step
+git log --stat --summary 		             	// Often the overview of the change is useful to get a feel of each step
+git branch							    // you’ll get a list of all existing branches
+git branch	<branch filename> 	          // create new branch
+git diff <filename>             			     // to show different between  versions
+git diff --cached
+git switch <branch file>			          //  to switch to the  branch. Now edit a file, commit the change
+
+git branch -d <branch filename>            // At this point you could delete the < branch filename> l branch with
+
+
+git checkout master
+
+#if i want add file to .gitignor and file was committed
+1-add file to .gitignor
+2-git rm - - cached filename
+
+gitDemo ///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
+“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”
+   

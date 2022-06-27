@@ -1,0 +1,20 @@
+// to mace apple  accept http sites
+
+steps : 
+1- open info.plist as source code 
+2- paste  this code 
+ <key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>openweathermap.org</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+
+3- save

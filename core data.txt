@@ -1,0 +1,15 @@
+#create coredata model  in project
+if the  project pre-created
+1-add core model (remember the name)
+2-import coredata
+3- copy  (Core Data stack & Core Data Saving support ) code from any project contain core model form beginning
+4-add entity and attributes to model
+5- Make Module Box:     “current product module”
+6- Create Context‫:‬   [ let context = UIApplication.shared.delegateas! AppDelegate).persistentContainer.viewContext ]
+7- create savefunc (write) loadfunc (read)
+
+COREMODEL FILES LOCATION [ users->ahmedhussien->library(hidden)->developer->Xcode->derived cache->”project name”->build->intermediates _ -> debug _ ->derived sources -> core data generated-> data model ]
+
+Sql Lite File Path [FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)]
+
+

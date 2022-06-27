@@ -1,0 +1,8 @@
+pod init
+open -a Xcode pod file ————> put code in the file
+pod install
+
+if( ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /usr/bin directory.)
+solution
+(sudo gem install cocoapods -n /usr/local/bin)

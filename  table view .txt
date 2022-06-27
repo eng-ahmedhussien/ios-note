@@ -1,0 +1,15 @@
+*create tableview steps
+1- add tableview to viewcontroler
+2- increase prototype cell +1
+3- add label in cell or any thing 
+4- create class for tableviewcell inherit from UITableViewCell and make label outlet for it
+5- create class for viewcontroler and make tableview outlet in it
+6- inherit from UITableViewDataSource 
+7- by using tableview outlet name. in viewDidLoad (datasource identification ) tableview outlet name .dataSource = self
+8- write UITableViewDataSource two functions 
+………………………………………………………….
+
+alert.addTextField { alertTextField in alertTextField.placeholder = "create new item”} //create textfield in alert
+tableView.deselectRow(at: indexPath,animated: true)  // animation when deselect row
+tableView.reloadData() // refresh tableview
+tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark //checkmark row when selected

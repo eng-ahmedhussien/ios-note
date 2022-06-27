@@ -1,0 +1,13 @@
+// title (entity name ) %@ (placeholder)
+1-“title CONTAINS[cd] %@"
+
+
+//parent a class (entity) . name is an (attribute) in parent 
+2-“parent.name MATCHES %@”
+
+
+3- 
+let predicate1 = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)l
+let predicate2 =  NSPredicate(format: “parent.name MATCHES %@”, selectedCategory!.name!)
+// make a compound quary
+let compoundPredicate =  NSCompoundPredicate(andPredicateWithSubpredicates:[categoryPredicate,addpredicate])
